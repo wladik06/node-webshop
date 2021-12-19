@@ -5,11 +5,11 @@ var schema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	price: String,
 	category: {
 		type: String,
 		required: true,
 	},
-	price: String,
 	status: String,
 });
 
