@@ -43,3 +43,10 @@ table {
     background-color:silver;
 }
 
+.form-group{
+    margin: 30px;
+}
+
+.radio{
+    margin: 15px;
+}

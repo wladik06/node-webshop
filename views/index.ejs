@@ -1,12 +1,12 @@
 <%- include('header') %> <!-- ejs syntax - include header -->
 
-    <div class="container"> 
+    <div class="container">
         <div>
-            <a href="/add-user">
-                <span class="">New User</span>
+            <a href="/views/add_product.html">
+                <button class="btn">Add new product</button>
             </a>
         </div>
-
+    
         <form action="/" method="POST">
             <table class="table">
                 <thead>
@@ -20,10 +20,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                   
+                    <tr>
+                        <td>1</td>
+                        <td>TestProduct</td>
+                        <td>Men</td>
+                        <td>1000 dkk</td>
+                        <td>In Stock</td>
+                        <td>
+                            <a href="#">
+                                <button>Update</button>
+                            </a>
+                            <button class="btn-delete">Delete</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </form>
     </div>
 
-<%- include('footer') %> <!-- include footer -->
+<%- include('footer') %>

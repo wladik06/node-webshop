@@ -16,8 +16,8 @@ app.use(
 
 app.set("template engine", "ejs");
 
-app.use("/css", express.static(path.resolve(__dirname, "/css")));
-app.use("/js", express.static(path.resolve(__dirname, "/js")));
+app.use("/css", express.static(path.resolve(__dirname, "resources/css")));
+app.use("/js", express.static(path.resolve(__dirname, "resources/js")));
 
 app.listen(3000, () => {
 	console.log("Runs on http://localhost:3000");
