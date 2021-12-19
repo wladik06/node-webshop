@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#header {
+    background-color: bisque;
+    padding: 16px;
+    margin-bottom: 100px;
+}
+
+.btn {
+    background-color: chartreuse;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+}
+
+.btn-delete:hover {
+    background-color:red;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th {
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.table tr:hover {
+    background-color:silver;
+}
+
