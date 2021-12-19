@@ -1,18 +1,18 @@
 const express = require("express");
 const bodyparser = require("body-parser");
 const path = require("path");
-
 const app = express();
+const connectDB = require('./database/connection');
 
-app.get("/", (req, res) => {
-	res.render('index.ejs');
-});
+connectDB();
 
 app.use(
 	bodyparser.urlencoded({
 		extended: true,
 	})
 );
+
+app.use('/', require('./routes/router'));
 
 app.set("template engine", "ejs");
 
