@@ -1,6 +1,6 @@
 exports.homeRoutes = (req, res) => {
-    res.render('index.ejs');
-}
+	res.render("index.ejs");
+};
 
 exports.add_product = (req, res) => {
 	res.render("add_product.ejs");

@@ -2,7 +2,7 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const path = require("path");
 const app = express();
-const connectDB = require('./database/connection');
+const connectDB = require("./database/connection");
 
 connectDB();
 
@@ -12,7 +12,7 @@ app.use(
 	})
 );
 
-app.use('/', require('./routes/router'));
+app.use("/", require("./routes/router"));
 
 app.set("template engine", "ejs");
 
