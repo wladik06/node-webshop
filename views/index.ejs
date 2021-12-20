@@ -1,4 +1,4 @@
-<%- include('header') %>    <!-- ejs syntax - include header -->
+<%- include('header') %>
 
 
 <header id="header">
@@ -52,7 +52,7 @@
                                 <a href="./update_product?id=<%= products[i]._id %>">
                                     <button type="button">Update</button>
                                 </a>
-                                <button type="button" class="btn-delete">Delete</button>
+                                <button type="button" class="btn-delete" data-id=<%= products[i]._id%>>Delete</button>
                             </td>
                         </tr>
                     <% } %>
