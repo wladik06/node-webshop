@@ -26,7 +26,7 @@ exports.update_product = (req, res) => {
 		})
 		.then(function (productdata) {
 			res.render("update_product.ejs", {
-				user: productdata.data,
+				product: productdata.data,
 			});
 		})
 		.catch((err) => {

@@ -1,5 +1,16 @@
 <%- include('header') %>    <!-- ejs syntax - include header -->
 
+
+<header id="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <h1>All products</h1>
+            </div>
+        </div>
+    </nav>
+</header>
+
     <div class="container">
         <div>
             <a href="/add_product">
@@ -7,7 +18,7 @@
             </a>
         </div>
 
-        <form action="/" method="POST">
+        <form method="POST">
             <table class="table">
                 <thead>
                     <tr>
@@ -38,10 +49,10 @@
                                 <%= products[i].status %>
                             </td>
                             <td>
-                                <a href="/update_product">
-                                    <button>Update</button>
+                                <a href="./update_product?id=<%= products[i]._id %>">
+                                    <button type="button">Update</button>
                                 </a>
-                                <button class="btn-delete">Delete</button>
+                                <button type="button" class="btn-delete">Delete</button>
                             </td>
                         </tr>
                     <% } %>
